@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Customer>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.Name</td>
+                <td>@customer.Address</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>

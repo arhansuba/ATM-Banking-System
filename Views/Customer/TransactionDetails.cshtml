@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Transaction>
+
+<table>
+    <thead>
+        <tr>
+            <th>Transaction Time</th>
+            <th>Amount</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.TransactionTime</td>
+                <td>@transaction.Amount</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+
